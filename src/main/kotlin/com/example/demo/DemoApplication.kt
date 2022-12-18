@@ -16,7 +16,10 @@ class DemoApplication
 
 fun main(args: Array<String>) {
 	runApplication<DemoApplication>(*args)
+//	produceDirectly()
+}
 
+fun produceDirectly() {
 	val props = Properties()
 	props.setProperty("bootstrap.servers", "127.0.0.1:29092")
 	props.setProperty("acks", "1")
